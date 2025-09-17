@@ -1,0 +1,67 @@
+<section class="mx-5">
+    <h1 class="text-2xl font-bold">Basic Pipes</h1>
+    <h3 class="text-xl font-thin">From Angular</h3>
+</section>
+
+<div class="stats stats-vertical lg:stats-horizontal shadow w-full">
+  <div class="stat">
+    <div class="stat-title">Lowercase Pipe</div>
+    <div class="stat-value">{{ nameUpper() | lowercase }}</div>
+    <div class="stat-desc text-secondary">Original value: {{ nameUpper() }}</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">Uppercase Pipe</div>
+    <div class="stat-value">{{ nameLower() | uppercase }}</div>
+    <div class="stat-desc text-secondary">Original value: {{ nameLower() }}</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">Titlecase Pipe</div>
+    <div class="stat-value">{{ fullName() | titlecase }}</div>
+    <div class="stat-desc text-secondary">Original value: {{ fullName() }}</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="stats stats-vertical lg:stats-horizontal shadow w-full">
+  <div class="stat">
+    <div class="stat-title">Date Pipe</div>
+    <div class="stat-value">{{ currentDate() | date }}</div>
+    <div class="stat-desc text-secondary">Original value: {{ currentDate() }}</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">Date|short|UTC</div>
+    <div class="stat-value">{{ currentDate() | date : "short" : "UTC" }}</div>
+    <div class="stat-desc text-secondary">Original value: {{ currentDate() }}</div>
+  </div>
+</div>
+
+<div class="stats stats-vertical lg:stats-horizontal shadow w-full">
+  <div class="stat">
+    <div class="stat-title">Date|mm-dd-yyyy</div>
+    <div class="stat-value">{{ currentDate() | date : "mm-dd-yyyy"}}</div>
+    <div class="stat-desc text-secondary">Original value: {{ currentDate() }}</div>
+  </div>
+
+  <div class="stat">
+    <div class="stat-title">Date|EEEE MMMM, d</div>
+    <div class="stat-value">{{ currentDate() | date : "EEEE MMMM, d" }}</div>
+    <div class="stat-desc text-secondary">Original value: {{ currentDate() }}</div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="flex flex-row gap-2">
+    <h1 class="text-2xl font-bold">
+        Locale:
+        <span class="badge badge-secondary">En</span>
+    </h1>
+    <button class="btn btn-primary">Fr</button>
+    <button class="btn btn-primary">Es</button>
+    <button class="btn btn-primary">En</button>
+
+</div>
