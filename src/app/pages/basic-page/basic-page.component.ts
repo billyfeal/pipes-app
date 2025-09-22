@@ -3,7 +3,7 @@ import { Component, effect, inject, signal } from '@angular/core';
 import { LocaleService } from '../../services/locale.service';
 
 @Component({
-  selector: 'app-basic-page',
+  selector: 'basic-page',
   imports: [LowerCasePipe, UpperCasePipe, TitleCasePipe, DatePipe],
   templateUrl: './basic-page.component.html',
 })
